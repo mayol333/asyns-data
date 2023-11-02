@@ -1,6 +1,6 @@
-export const User = ({ name, email, city, company }) => {
+export const User = ({ id, name, email, city, company, handleUserClick }) => {
     return (
-        <div className="container">
+        <div onClick={() => handleUserClick(id)} className="container">
             <p>
                 <span>name:</span> {name}
             </p>
