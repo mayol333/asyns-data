@@ -30,3 +30,37 @@ code {
   display: flex;
   justify-content: space-between;
 }
+.section{
+  background-color: rgba(17, 17, 112, 0.979);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.div{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 450px;
+}
+.headline{
+  color: white;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+.title{
+  color: red;
+  text-transform: uppercase;
+}
+.text-input{
+  height: 30px;
+}
+.message-input{
+  height: 100px;
+}
+.click{
+  background-color: aquamarine;
+  color: white;
+  margin-top: 30px;
+  height: 50px;
+}

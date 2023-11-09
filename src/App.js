@@ -4,7 +4,6 @@ import axios from "axios";
 function App() {
     const [data, setData] = useState([]);
     const [right, setRight] = useState([]);
-
     const handleUserClick = (id) => {
         const moveRight = data.find((element) => {
             return element.id === id;
@@ -15,7 +14,6 @@ function App() {
         });
         setData(remove);
     };
-
     const handleReversedUserClick = (id) => {
         const moveLeft = right.find((element) => {
             return element.id === id;
@@ -26,7 +24,6 @@ function App() {
         });
         setRight(remove);
     };
-
     const empty = async () => {
         try {
             const { data } = await axios.get(
