@@ -41,6 +41,15 @@ export const Form = () => {
         };
         getUsers();
     }, []);
+    const handleDelete = async (id) => {
+        console.log(id);
+        try {
+            await axios.delete(`http://localhost:8000/users/${id}`);
+        } catch (error) {
+            console.log(error);
+        }
+    };
+
     return (
         <section className="section">
             <h1 className="headline">simple contact form</h1>
@@ -117,6 +126,8 @@ export const Form = () => {
                             phoneNumber={phoneNumber}
                             city={city}
                             message={message}
+                            handleDelete={handleDelete}
+                            id={id}
                         />
                     );
                 }

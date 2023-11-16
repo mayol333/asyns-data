@@ -5,9 +5,11 @@ export const User = ({
     phoneNumber,
     city,
     message,
+    handleDelete,
+    id,
 }) => {
     return (
-        <div className="container">
+        <div onClick={() => handleDelete(id)} className="container">
             <p>
                 <span>firstName:</span> {firstName}
             </p>
